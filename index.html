@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🌟 Enhanced Task Manager</h1>
+        <p>Organize, track, and manage your tasks effectively!</p>
+    </header>
+
+    <main>
+        <section class="task-section">
+            <h2>Add Your Tasks</h2>
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button id="addTaskBtn"><i class="fas fa-plus-circle"></i> Add Task</button>
+            </div>
+
+            <!-- Search and Calendar Inputs organized in lines -->
+            <div>
+                <label for="searchTask">Search Task:</label>
+                <input type="text" id="searchTask" placeholder="Search tasks...">
+            </div>
+            <div>
+                <label for="taskDate">Select Due Date:</label>
+                <input type="date" id="taskDate">
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+            </div>
+
+            <p id="taskCounter"></p>
+            <div id="currentDate"></div>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by [Vinoth Kumar V] | © 2024 Enhanced Task Manager</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

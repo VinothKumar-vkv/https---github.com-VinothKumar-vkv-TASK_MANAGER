@@ -1,0 +1,136 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: #333;
+    line-height: 1.6;
+}
+
+header, main, footer {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+/* Task input section */
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 70%;
+    padding: 10px;  /* Adjusted padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;  /* Adjusted font size */
+    transition: 0.3s ease-in-out;
+}
+
+.task-input button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;  /* Adjusted font size */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Search and Calendar inputs styling */
+input[type="text"], input[type="date"] {
+    padding: 8px;
+    font-size: 14px;  /* Adjusted font size */
+    width: 100%;
+    max-width: 250px; /* Fixed width for better alignment */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filters .filter-btn {
+    background: #ddd;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters .filter-btn:hover {
+    background: #4caf50;
+    color: white;
+}
+
+#taskCounter {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+}
+
+.task-item-checkbox {
+    margin-right: 10px;
+}
+
+#taskList li button {
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Current date display */
+#currentDate {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Overdue task styling */
+#taskList li.overdue {
+    background-color: #ffcccc;
+    color: #ff0000;
+}
